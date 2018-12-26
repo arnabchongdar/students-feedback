@@ -3,7 +3,7 @@
     $hostname = "localhost";
     $username = "root";
     $password = "Arnab@1997";
-    $database = "ECE";
+    $database = "ADMIN";
 
     $conn = mysqli_connect($hostname, $username, $password, $database);
     if (!$conn) {
@@ -18,20 +18,20 @@
     }
     
     
-    $email=$_POST["name"];
-    $password=$_POST["password"];
+    $name=$_POST["name"];
+    $email=$_POST["email"];
     
     $flag=0;
     while ($row=mysqli_fetch_array($result)) {
         
-        if($email==$row['name'] && $password==$row['password']){
-            echo "Successfully logged in";
+        if($email==$row['email'] && $name==$row['name']){
+            echo "<h1 align=center>Successfully logged in</h1>";
             echo "<br/>";
-            echo "Hello ".$row['name']."<br/>";
+            echo 'Hello '.$row['name'].'<br/>';
             $flag=1;
             //setcookie("name",$row['name']);
             $_SESSION['name']=$row['name'];
-            echo"<a href='dashboard.php'>click here</a>";
+            echo"<h2 align=center><a href='project_dashboard.php'>click here to go to dashboard</a></h2>";
             break;
         }
     }
@@ -42,4 +42,5 @@
     mysqli_close($conn);
     
 ?>
+
 

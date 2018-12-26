@@ -75,37 +75,39 @@
     		$passwords=$_POST["password"];
     
     		$sql = "SELECT * from 5log";
-    		$result = mysqli_query($conn, $sql);
+    		$result = mysqli_query($conn,$sql);
 
     		if (!$result) {
        		die(mysqli_error($conn));
     		}
 
-			?>
+		?>
 			<div class="wrapper">
 				<div class="part">
 					<img src="https://www.shareicon.net/data/512x512/2015/11/26/678050_users_512x512.png">
 					
 				</div>
 				<p>
-					<?php    		
+					<?php   
+					$flag=0; 		
     				while ($row=mysqli_fetch_array($result)) {
         				if ($row['email']==$emails && $row['password']==$passwords){
         					$_SESSION['name']=$row['name'];
-        					
+        					$flag=1;
         					echo "<br>"."<br>"."WELCOME AGAIN"."<br>"."<br>";           					
            				echo "Hello!!"."&nbsp".$row['name'];
+					echo '<a href="logged_user_dashboard.php"><button class="btnsub">GO TO DASHBOARD</button></a>';
        					break;
           			}
     				} 
     
-    				if($row==NULL){
+    				if($flag!=1){
         				echo "SORRY !!"."<br>"."login ! FAILED!";
     				} 
     				mysqli_close($conn);
 					?>
 				</p>
-				<a href="logged_user_dashboard.php"><button class="btnsub">GO TO DASHBOARD</button></a>
-			</div>
+				
+		      </div>
 	</body>
 </html>

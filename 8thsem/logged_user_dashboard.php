@@ -52,8 +52,8 @@
 		<!--navigation menu ends here-->
 		
 		<?php
-			session_start();
-			$hostname = "localhost";
+		session_start();
+		$hostname = "localhost";
     		$username = "root";
     		$password = "Arnab@1997";
     		$database = "8TH";
@@ -62,14 +62,14 @@
     		if (!$conn) {
         		die("Connection failed: " . mysqli_connect_error());
     		}
-    		$var_course=$_SESSION['registered_course'];
-    		$var_specialization=$_SESSION['registered_specialization'];
-    		$var_city=$_SESSION['registered_city'];
-    		$var_state1=$_SESSION['registered_state1'];
-    		$var_state2=$_SESSION['registered_state2'];
+    		$var_course="B.TECH";
+    		$var_specialization="E.C.E";
+    		$var_year="4th year";
+		$var_semester="8th semester";
+
     		
     		
-    		$sql="SELECT * FROM college_details WHERE course_offered='$var_course'";
+    		$sql="SELECT * FROM 8log";
     		$result = mysqli_query($conn,$sql);
 			if (!$result) {
    			die(mysqli_error($conn));
@@ -78,13 +78,7 @@
     			echo "Connected to database";
     			
 			?>
-			<div class="list">
-			<?php			
-			while ($row=mysqli_fetch_array($result)) {
-				echo "COLLEGE STATE : ".$row['college_states']."<br>COLLEGE NAME : ".$row['college_names']."<br>COLLEGE DEGREE OFFERS : ".$row['course_offered']."<br>DEPARTMENT : ".$row['departments']."<br><br>";   
-        	} 
-        	?>
-        	</div>  		
+			 		
     		
     		<div class="sidebar">
 				<div class="wrapiconandname">				
@@ -95,11 +89,10 @@
 				</div>
 				<div class="details">	
 					<?php
-						echo "COURSE:".$_SESSION['registered_course']."<br>"."<br>";	
-						echo "SPECIALIZATION:"."&nbsp".$_SESSION['registered_specialization']."<br>"."<br>";
-						echo "CITY:".$_SESSION['registered_city']."<br>"."<br>";	
-						echo "STATE PREF 1:".$_SESSION['registered_state1']."<br>"."<br>";
-						echo "STATE PREF 2:".$_SESSION['registered_state2']."<br>"."<br>";	
+						echo "COURSE:".$var_course."<br>"."<br>";	
+						echo "SPECIALIZATION:"."&nbsp".$var_specialization."<br>"."<br>";
+						echo "YEAR:".$var_year."<br>"."<br>";	
+						echo "SEMESTER:".$var_semester."<br>"."<br>";	
 					}
 					else 
 						echo"session unset";

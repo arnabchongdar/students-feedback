@@ -55,8 +55,8 @@
 			session_start();
 			$hostname = "localhost";
     		$username = "root";
-    		$password = "sql123";
-    		$database = "PROJECT_COLLEGE";
+    		$password = "Arnab@1997";
+    		$database = "1TH";
     
     		$conn = mysqli_connect($hostname, $username, $password, $database);
     		if (!$conn) {
@@ -69,7 +69,7 @@
     		$var_state2=$_SESSION['registered_state2'];
     		
     		
-    		$sql="SELECT * FROM college_details WHERE course_offered='$var_course'";
+    		$sql="SELECT * FROM 1log WHERE course_offered='$var_course'";
     		$result = mysqli_query($conn,$sql);
 			if (!$result) {
    			die(mysqli_error($conn));
