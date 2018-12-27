@@ -31,7 +31,7 @@
             $flag=1;
             //setcookie("name",$row['name']);
             $_SESSION['name']=$row['name'];
-            echo"<h2 align=center><a href='project_dashboard.php'>click here to go to dashboard</a></h2>";
+            echo"<h2 align=center><a href='logged_user_dashboard.php'>click here to go to dashboard</a></h2>";
             break;
         }
     }
