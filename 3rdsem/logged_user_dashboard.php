@@ -56,7 +56,7 @@
 		$hostname = "localhost";
     		$username = "root";
     		$password = "Arnab@1997";
-    		$database = "1TH";
+    		$database = "3TH";
     
     		$conn = mysqli_connect($hostname, $username, $password, $database);
     		if (!$conn) {
@@ -64,12 +64,12 @@
     		}
     		$var_course="B.TECH";
     		$var_specialization="E.C.E";
-    		$var_year="1st year";
-		$var_semester="1st semester";
+    		$var_year="2nd year";
+		$var_semester="3th semester";
 
     		
     		
-    		$sql="SELECT * FROM 1log";
+    		$sql="SELECT * FROM 3log";
     		$result = mysqli_query($conn,$sql);
 			if (!$result) {
    			die(mysqli_error($conn));
@@ -88,6 +88,7 @@
         	} }
         	?>
         	</div>  <!---mid-portion-->
+
 			 		
     		
     		<div class="sidebar">

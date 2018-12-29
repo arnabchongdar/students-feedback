@@ -56,7 +56,7 @@
 		$hostname = "localhost";
     		$username = "root";
     		$password = "Arnab@1997";
-    		$database = "1TH";
+    		$database = "6TH";
     
     		$conn = mysqli_connect($hostname, $username, $password, $database);
     		if (!$conn) {
@@ -64,12 +64,12 @@
     		}
     		$var_course="B.TECH";
     		$var_specialization="E.C.E";
-    		$var_year="1st year";
-		$var_semester="1st semester";
+    		$var_year="3rd year";
+		$var_semester="6th semester";
 
     		
     		
-    		$sql="SELECT * FROM 1log";
+    		$sql="SELECT * FROM 8log";
     		$result = mysqli_query($conn,$sql);
 			if (!$result) {
    			die(mysqli_error($conn));
@@ -77,17 +77,7 @@
     		else if($result)
     			echo "Connected to database";
     			
-			?><!--mid-portion--->
-			<div class="list">
-			<?php			
-			while ($row=mysqli_fetch_array($result)) $flag=1;{
-				if($flag==1){
-				echo "YOUR 3RD SEMESTER COURSE CONTAINS<br><br>";
-				echo "M302: "."MATHEMATICS"."<br>M(CS)301 : "."NUMERICAL METHODS"."<br>EC301: "."CIRCUIT THEORY &NETWORKS"."<br>EC302 : "."SOLID STATE DEVICE"."<br>EC303 :"."SIGNAL &SYSTEM"."<br>EC304 :"."ANALOG DEVICE"."<br><br><br><a href='#'>CLICK HERE TO SUBMIT YOUR FEEDBACK</a>"; 
- $flag++; 
-        	} }
-        	?>
-        	</div>  <!---mid-portion-->
+			?>
 			 		
     		
     		<div class="sidebar">
