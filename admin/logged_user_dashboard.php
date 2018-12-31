@@ -44,7 +44,7 @@
 				<ul>					
 						<li><a href="#">1st Semester</a></li>
 						<li><a href="#">2nd Semester</a></li>
-						<li><a href="#">3rd Semester</a></li>
+						<li><a href="abc.php">3rd Semester</a></li>
 						<li><a href="#">4th Semester</a></li>
 						<li><a href="#">5th Semester</a></li>
 						<li><a href="#">6th Semester</a></li>
