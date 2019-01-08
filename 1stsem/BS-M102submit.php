@@ -2,7 +2,7 @@
     $hostname = "localhost";
     $username = "root";
     $password = "Arnab@1997";
-    $database = "3TH";
+    $database = "1TH";
 
     $conn = mysqli_connect($hostname, $username, $password, $database);
     if (!$conn) {
@@ -18,10 +18,10 @@
     $grade7=$_POST['grade7'];
     $grade8=$_POST['grade8'];
 
-    $sql = "INSERT INTO M302_1 (grade1,grade2,grade3,grade4,grade5,grade6,grade7,grade8) VALUES ('$grade1','$grade2','$grade3','$grade4','$grade5','$grade6','$grade7','$grade8')";
+    $sql = "INSERT INTO BSM102(grade1,grade2,grade3,grade4,grade5,grade6,grade7,grade8) VALUES ('$grade1','$grade2','$grade3','$grade4','$grade5','$grade6','$grade7','$grade8')";
 
     if (mysqli_query($conn, $sql)) {
-        header("location:M302_2feedback.html");
+        header("location:BS-M102_1feedback.html");
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }

@@ -18,20 +18,20 @@
     }
     
     
-    $name=$_POST["name"];
     $email=$_POST["email"];
+    $password=$_POST["password"];
     
     $flag=0;
     while ($row=mysqli_fetch_array($result)) {
         
-        if($email==$row['email'] && $name==$row['name']){
+        if($password==$row['password'] && $email==$row['email']){
             echo "<h1 align=center>Successfully logged in</h1>";
             echo "<br/>";
             echo 'Hello '.$row['name'].'<br/>';
             $flag=1;
             //setcookie("name",$row['name']);
             $_SESSION['name']=$row['name'];
-            echo"<h2 align=center><a href='logged_user_dashboard.php'>click here to go to dashboard</a></h2>";
+             header("location:logged_user_dashboard.php");
             break;
         }
     }

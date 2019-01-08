@@ -83,7 +83,7 @@
 			while ($row=mysqli_fetch_array($result)) $flag=1;{
 				if($flag==1){
 				echo "YOUR 3RD SEMESTER COURSE CONTAINS<br><br>";
-				echo "M302: "."MATHEMATICS"."<br>M(CS)301 : "."NUMERICAL METHODS"."<br>EC301: "."CIRCUIT THEORY &NETWORKS"."<br>EC302 : "."SOLID STATE DEVICE"."<br>EC303 :"."SIGNAL &SYSTEM"."<br>EC304 :"."ANALOG DEVICE"."<br><br><br><a href=M302_1feedback.html>CLICK HERE TO SUBMIT YOUR FEEDBACK</a>"; 
+				echo "M302: "."MATHEMATICS"."<br>M(CS)301 : "."NUMERICAL METHODS"."<br>EC301: "."CIRCUIT THEORY &NETWORKS"."<br>EC302 : "."SOLID STATE DEVICE"."<br>EC303 :"."SIGNAL &SYSTEM"."<br>EC304 :"."ANALOG ELECTRONICS"."<br>M(CS)391:"."NUMERICAL METHODS LAB"."<br>EC391:"."CIRCUIT THEORY LAB"."<br>EC392:"."SOLID STATE DEVICE LAB"."<br>EC393:"."SIGNAL & SYSTEM LAB"."<br>EC394:"."ANALOG ELECTRONICS LAB"."<br><br><a href=M302_1feedback.html>CLICK HERE TO SUBMIT YOUR FEEDBACK</a>"; 
  $flag++; 
         	} }
         	?>

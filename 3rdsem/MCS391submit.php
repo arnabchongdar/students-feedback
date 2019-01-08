@@ -18,10 +18,10 @@
     $grade7=$_POST['grade7'];
     $grade8=$_POST['grade8'];
 
-    $sql = "INSERT INTO M302_1 (grade1,grade2,grade3,grade4,grade5,grade6,grade7,grade8) VALUES ('$grade1','$grade2','$grade3','$grade4','$grade5','$grade6','$grade7','$grade8')";
+    $sql = "INSERT INTO MCS391 (grade1,grade2,grade3,grade4,grade5,grade6,grade7,grade8) VALUES ('$grade1','$grade2','$grade3','$grade4','$grade5','$grade6','$grade7','$grade8')";
 
     if (mysqli_query($conn, $sql)) {
-        header("location:M302_2feedback.html");
+        header("location:EC391feedback.html");
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }

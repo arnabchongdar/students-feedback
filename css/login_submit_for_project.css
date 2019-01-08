@@ -31,8 +31,8 @@
 			
 			div.wrapper{
 				position: absolute;
-				left:440px;				
-				width:379px;
+				left:30px;				
+				width:1800px;
 				background-color: rgb( 245, 176, 65 );
 				height:80%;			
 				top:116px;
@@ -146,5 +146,30 @@
 					top:-60px;				
 				}	
 			
-		//NAVIGATION MENU ENDS
+		
+.a1{
+float:left;
+position:relative;
+top:0px;
+width:1790px;
+height:40px;
+border:solid;
+border-color:black;
+border-width:1px;
+}
+.b1{
+float:left;
+height:40px;
+width:8.94%;
+border:solid;
+border-color:black;
+border-width:1px;
+}
+#w
+{
+position:relative;
+top:50px;
+left:900px;
+}
+}
 			

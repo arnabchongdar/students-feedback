@@ -82,8 +82,8 @@
 			<?php			
 			while ($row=mysqli_fetch_array($result)) $flag=1;{
 				if($flag==1){
-				echo "YOUR 3RD SEMESTER COURSE CONTAINS<br><br>";
-				echo "M302: "."MATHEMATICS"."<br>M(CS)301 : "."NUMERICAL METHODS"."<br>EC301: "."CIRCUIT THEORY &NETWORKS"."<br>EC302 : "."SOLID STATE DEVICE"."<br>EC303 :"."SIGNAL &SYSTEM"."<br>EC304 :"."ANALOG DEVICE"."<br><br><br><a href='#'>CLICK HERE TO SUBMIT YOUR FEEDBACK</a>"; 
+				echo "YOUR 1ST SEMESTER COURSE CONTAINS<br><br>";
+				echo "BS-CH101: "."CHEMISTRY-1"."<br>BS-M102 : "."MATHEMATICS-1B"."<br>ES-EE101: "."BASIC ELECTRICAL ENGINEERING"."<br>BS-CH191 : "."CHEMISTRY-1 LABORATORY"."<br>ES-EE191 :"."BASIC ELECTRICAL ENGINEERING LABORATORY"."<br>ES-ME191 :"."ENGINEERING GRAPHICS & DESIGN"."<br><br><br><a href='BS-CH101feedback.html'>CLICK HERE TO SUBMIT YOUR FEEDBACK</a>"; 
  $flag++; 
         	} }
         	?>

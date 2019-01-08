@@ -77,7 +77,18 @@
     		else if($result)
     			echo "Connected to database";
     			
-			?>
+			?><!--mid-portion--->
+			<div class="list">
+			<?php			
+			while ($row=mysqli_fetch_array($result)) $flag=1;{
+				if($flag==1){
+				echo "YOUR 5TH SEMESTER COURSE CONTAINS<br><br>";
+				echo "HU501: "."ECONOMICS for ENGINEERS"."<br>EC501 : "."ANALOG COMMUNICATION"."<br>EC502: "."MICROPROCESSORS & MICROCONTROLLERS"."<br>EC503 : "."CONTROL SYSTEM"."<br>EC504B :"."DATA STRUCTURE & C"."<br>EC591 :"."ANALOG COMMUNICATION"."<br>EC592:"."MICROPROCESSORS & MICROCONTROLLERS"."<br>EC593:"."CONTROL SYSTEM"."<br>EC594B:"."DATA STRUCTURE & C"."<br><br><a href=HU501feedback.html>CLICK HERE TO SUBMIT YOUR FEEDBACK</a>"; 
+ $flag++; 
+        	} }
+        	?>
+        	</div>  <!---mid-portion-->
+
 			 		
     		
     		<div class="sidebar">

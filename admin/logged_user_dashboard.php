@@ -42,11 +42,11 @@
 		
 			<li class><a href="#">FEEDBACK RESPONSE</a>
 				<ul>					
-						<li><a href="#">1st Semester</a></li>
+						<li><a href="1sem.php">1st Semester</a></li>
 						<li><a href="#">2nd Semester</a></li>
-						<li><a href="abc.php">3rd Semester</a></li>
+						<li><a href="3sem.php">3rd Semester</a></li>
 						<li><a href="#">4th Semester</a></li>
-						<li><a href="#">5th Semester</a></li>
+						<li><a href="5sem.php">5th Semester</a></li>
 						<li><a href="#">6th Semester</a></li>
 						<li><a href="#">7th Semester</a></li>
 						<li><a href="#">8th Semester</a></li>
